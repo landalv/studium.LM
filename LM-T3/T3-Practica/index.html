@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"><!--Especificamos juego de caracteres-->
+        <!--Titulo-->
+        <title>Carlos Landa Vázquez</title>
+        <!--Favicon-->
+        <link rel="icon" type="image/png" href="./media/img/logos/landacarlos-logo.png">
+        <!--Estilos CSS-->
+        <link rel="stylesheet" type="text/css" href="./css/general.css"><!--estilos generales para estructura HTML5-->
+        <link rel="stylesheet" type="text/css" href="./css/menu.css"><!--estilos para menu superior (header+nav) -->
+        <link rel="stylesheet" type="text/css" href="./css/cuerpo.css"><!--estilos para el cuerpo de la web-->
+    </head>
+    <body>
+        <header class="menu" id="inicio">
+            <!--CABECERA A LA IZQUIERDA DEL MENU-->
+            <div class="logo-container">
+                <a href="./#menu">
+                    <img src="./media/img/logos/landacarlos.png" alt="logo-landacarlos.com" title="landacarlos.com">
+                </a>
+            </div>
+            <div>
+                <a href="./#menu">
+                    <h1>Carlos Landa Vázquez</h1>
+                </a>
+            </div>
+        </header>
+        <hr class="menu-bar">
+        <nav class="menu">
+            <!-- ENLACES DE NAVEGACIÓN -->
+            <div>
+                <ul class="menu" type="none" >
+                    <li><a href="#inicio" >Inicio</a></li>
+                    <li><a href="#sobremi">Sobre mi</a></li>
+                    <li><a href="https://drive.google.com/file/d/14xD5AosQMy_A4FpEtl3JZjJr6Je3xsk-/view?usp=sharing" target="_blank">Curriculum</a></li>
+                    <li><a href="./proyectos.html">Proyectos</a></li>
+                    <li><a href="./hobbies.html">Hobbies</a></li>
+                    <li><a href="mailto:carlos@landacarlos.com?Subject=Estoy%20interesado%20en%20tu%20perfil">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- ICONO REDES SOCIALES -->
+            <div>
+                <div class="redes-container">
+                    <a href="https://github.com/landalv" target="_blank" class="redes-icon">
+                        <img src="./media/img/logos/github-white.png" alt="github-logo" title="Enlace a Github">
+                        <img src="./media/img/logos/github-green.png" alt="github-logo" title="Enlace a Github">
+                    </a>
+                </div>
+                <div class="redes-container">
+                    <a href="https://www.linkedin.com/in/carlos-landa-vazquez" target="_blank" class="redes-icon">
+                        <img id="github-logo" src="./media/img/logos/linkedin-white.png" alt="linkedin-logo" title="Enlace a LinkedIn">
+                        <img id="github-logo" src="./media/img/logos/linkedin-green.png" alt="linkedin-logo" title="Enlace a LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <!--Cuerpo Central-->
+            <article class="sobremi" id="sobremi">
+                <!--SOBRE MI-->
+                <!--Articulo dentro de la sección principal-->
+                <div class="avatar-contenedor">
+                    <img src="./media/img/carlos.jpg" alt="foto-carlos" title="Carlos Landa Vázquez">
+                </div>
+                <div>
+                    <h2>Carlos Landa Vázquez</h2>
+                    <hr>
+                    <h3>Programador, y desarollador IoT.</h3>
+                    <br>
+                    <p>
+                        Me especializo en el desarrollo de soluciones tecnológicas automatizadas, e integradas con las tecnologías mas nuevas, a traves de Internet, de una forma segura. Eso tiene un nombre, y es <span>IoT</span>.
+                    </p>
+                    <hr>
+                    <div>
+                        <div class="button">
+                            <a href="https://drive.google.com/file/d/14xD5AosQMy_A4FpEtl3JZjJr6Je3xsk-/view?usp=sharing" target="_blank">
+                                Descargar CV
+                            </a>
+                        </div>
+                        <audio autoplay controls>
+                            <source src="./media/audio/CLV_Presentación.mp3" type="audio/mp3"/>
+                            Tu navegador no acepta .mp3
+                        </audio>
+                    </div>
+                </div>
+            </article>
+            <br>
+            <article class="formacion" id="formacion">
+                <!--FORMACIÓN-->
+                <table  align="center">
+                    <thead>
+                        <tr>
+                            <th colspan="3">
+                                <h2>formación reglada</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        <tr>
+                            <td>
+                                <h3>Desarrollador de Aplicaciones Web</h3>
+                                <h4>grupo Studium</h4>
+                                <p>2021-actualidad</p>
+                            </td>
+                            <td>
+                                <h3>Automatismo y Robotica Industrial</h3>
+                                <h4>nombre centro</h4>
+                                <p>2016-2019</p>
+                            </td>
+                            <td>
+                                <h3>Instalaciones comunes de Telecomunicaciones</h3>
+                                <h4>C.D.P Ada</h4>
+                                <p>2014-2006</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot align="center">
+                        <tr><td colspan="3"><h2>Hard Skills</h2></td></tr>
+                        <tr>
+                            <td><h3>git</h3></td>
+                            <td><h3>C++</h3></td>
+                            <td><h3>Python</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>JavaScript</h3></td>
+                            <td><h3>Docker</h3></td>
+                            <td><h3>MQTT</h3></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+            <article class="proyectos" id="proyectos">
+                <!--PROYECTOS-->
+                <table  align="center">
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <h2>Proyectos Profesionales</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        <tr>
+                            <td>
+                                <h3>AutoFill Restalia</h3>
+                                <div>
+                                    <p>Uno de los primeros proyectos que lleve a cabo en la empresa <span>GM Ingenieria</span> fue un tirador de cerveza automatico, con telemetria y accionamiento automatico, para el cliente <span>100 montaditos</span> del grupo restalia. El cual llevaba a cabo consultas a una base de datos externa a traves de IoT para la gestion de la cartera virtual del usuario.</p>
+                                    <div class="img-container">
+                                        <a href="./proyectos.html">
+                                            <img src="./media/img/proyectos/100_montaditos_revoluciona.png" alt="tirador de cerveza Autofill-restalia" title="Autofill-restalia">
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h3>Solum eScooter Charging Stations</h3>
+                                <div>
+                                    <p>Desarrollo y mantenimiento de estaciones de carga de patinetes electricos, por <span>carga solar</span>, con accionamiento y monitorización remota a traves de app propia y con certificación <span>CE</span>. Estaciones completamente autonomas, con mantenimiento 100% remoto y con especificaciones de protocolo <span>OCPP</span>, estandar en estaciones de recarga como Tesla o Wallbox.</p>
+                                    <div class="img-container">
+                                        <a href="./proyectos.html">
+                                            <img src="./media/img/proyectos/helios.png" alt="Estación de recarga helios-solum" title="Helios Solum">
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <br>
+            <article class="hobbies" id="hobbies">
+                <!--HOBBIES-->
+                <table align="center">
+                    <thead>
+                        <tr>
+                            <th colspan="3">
+                                <h2>Hobbies</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        <tr>
+                            <td>
+                                <h3>Impresión 3D</h3>
+                                <div>
+                                    <p>Dispongo de una Creality Ender3, diseño e imprimo en 3D mediante Octoprint y Autodesk Fusión360.</p>
+                                    <div class="img-container">
+                                        <a href="./hobbies.html">
+                                            <img src="./media/img/hobbies/impresion3d.png" alt="impresion 3d" title="Impresión 3D">
+                                        </a>
+                                    </div>
+                                </div>
+                                <hr>
+                            </td>
+                            <td>
+                                <h3>Scout</h3>
+                                <div>
+                                    <p>He sido monitor Scout y me gusta llevar a cabo escapadas a la naturaleza, y enseñar campismo.</p>
+                                    <div class="img-container">
+                                        <a href="./hobbies.html">
+                                            <img src="./media/img/hobbies/carlos-scout.jpg" alt="Carlos Landa en actividad scout." title="Carlos Scout">
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h3>Domotica</h3>
+                                <div>
+                                    <p>Mi pasión es la aplicación de todos mis conocimientos a la eficiencia en el dia a dia, y como tal, mi hogar no iba a ser una excepción. Cuento con un sistema domotico propio, el cual mantengo y amplio con electronica propia y la ultima tecnologia IoT.</p>
+                                    <div class="img-container">
+                                        <a href="./hobbies.html">
+                                            <img src="./media/img/hobbies/homeassistant.png" alt="homeassistant logotipo" title="Homeassistant-Logo">
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <aside class="aside" id="indice">
+            <!--INCIDE DE CONSULTAS-->
+            <ul>
+                <div class="title-container">
+                    <h1>índice</h1>
+                </div>
+                <hr>
+                <li><a href="#inicio">inicio</a></li>
+                <li><a href="#sobremi">sobre mi</a></li>
+                <li><a href="#formacion">formación</a></li>
+                <li><a href="#proyectos">proyectos</a></li>
+                <li><a href="#hobbies">hobbies</a></li>
+            </ul>
+        </aside>
+        <footer>
+            <!--Pie de pagina web-->
+            <div><h2>&copy; Carlos Landa Vazquez 2022</h2></div>
+        </footer>
+    </body>
+</html>

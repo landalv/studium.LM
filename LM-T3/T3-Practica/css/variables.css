@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: landafont;
+    src: url(./fonts/landafont.ttf);
+}
+*{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+html,
+body{ /*Definimos las variables que vamos ha usar en todas las paginas*/
+    /*PALETA DE COLORES*/
+    --color-primario: rgb(0, 224, 194, .9);
+    --color-primario-oscuro: rgb(56, 90, 100, .6);
+    --color-secundario: #fff;
+    --color-terciario: #404040;
+    --color-barra-espaciadora:#808080;
+    --color-background:rgba(0, 0, 0, .4);
+    /*FONDO DE PANTALLA CON EFECTO OSCURECIDO*/
+    --fondo:linear-gradient(var(--color-background),var(--color-primario-oscuro)),url(../media/img/programar.jpg);
+    /*ESPACIOS DEFINIDOS*/
+    --default-big-margin: 2rem;
+    --default-small-margin:.25rem;
+    --default-big-padding: 1rem;
+    --default-mid-padding: .5rem;
+    --default-small-padding:.25rem;
+    /*ESQUINAS*/
+    --default-border-radius:30px;
+    /*DIMENSIONES CONTENEDORES*/
+    --default-big-width:89rem;
+    --default-medium-width:5rem;
+    --default-small-width:2rem;
+    --default-big-height:5rem;
+    --default-medium-height:3rem;
+    --default-small-height:.2rem;
+    --big-font-size:2.5rem;
+    --mid-font-size:1.5rem;
+    --default-font-size:1rem;
+    --imagen-width:100%;/*usar siempre dentro de contenedor y dar tamaño al contenedor*/
+}

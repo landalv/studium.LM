@@ -1,0 +1,131 @@
+@import url(normalize.css);/*normalizamos estilos para todos los navegadores--><!--ref: https://necolas.github.io/normalize.css/*/
+@import url(variables.css);
+    body{
+        /*Establecemos Referencia de tamaño de letra*/
+        width: 100%;
+        min-width: 1316px;
+        /*Establecemos valoreas por defecto*/
+        margin: 0%;
+        padding: 0%;
+        /*Establecemos el estilo del fondo de pantalla*/
+        background: var(--fondo);
+        background-size: cover;
+        background-position: center top;
+    }
+    a{
+        clear: both;
+        text-decoration: none;
+        color: var(--color-secundario);
+    }
+    a:hover{
+        color: var(--color-primario);
+        text-shadow: .5rem .5rem var(--color-primario-oscuro);
+    }
+    hr{
+        background-color: var(--color-barra-espaciadora);
+    }
+    .button{
+        float: left;
+        clear: both;
+        width: auto;
+        text-decoration: none;
+        text-align: center;
+        background-color: var(--color-primario);
+        padding: .25rem 2rem;
+        margin-right: 2rem;
+        border: .25rem solid var(--color-secundario);
+        border-radius: 5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: .5s;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -o-border-radius: 5rem;
+    }
+        .button:hover{
+            background-color: var(--color-background);
+            color: var(--color-secundario);
+        }
+        .button a{
+        color: var(--color-primario-oscuro);
+        }
+            .button a:hover{
+                color: var(--color-secundario);
+            }
+        
+
+        /*MENU (HEADER+NAV)*/
+        /*anadido en menu.css*/
+
+        /*CUERPO (SECTIONs: SOBREMI, FORMACIÓN, PROYECTOS, HOBBIES)*/
+        section{
+            width: 82%;
+            margin: var(--default-big-margin);
+            float: left;
+        }
+
+        /*ASIDE*/
+        .aside{
+            width:14%;
+            margin: var(--default-big-margin);
+            position: fixed;
+            margin-left: 85%;
+            padding-right: 2%;
+            max-width: min(171px);
+            align-items: center;
+            background-color: var(--color-background);
+            color: var(--color-primario);
+            float: right;
+            border-radius: var(--default-border-radius);
+                -webkit-border-radius: var(--default-border-radius);
+                -moz-border-radius: var(--default-border-radius);
+                -ms-border-radius: var(--default-border-radius);
+                -o-border-radius: var(--default-border-radius);
+            text-transform: uppercase;
+            box-shadow: 2rem 2rem var(--color-primario-oscuro);
+        }
+            .aside .title-container{
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+            }
+            .aside li{
+                margin-right: 1%;
+            }
+            .aside h1{
+                text-align: center center;
+            }
+
+
+        /*FOOTER (solo contien el copyrigth)*/
+        /*debido a la poca información no es necesario definirlo aparte.*/
+        footer{
+            width: 98%;
+            margin: 1rem;
+            height: 6rem;
+            clear: both;
+            text-align: center;
+            align-items: center;
+            border-radius: var(--default-border-radius);
+            -webkit-border-radius: var(--default-border-radius);
+            -moz-border-radius: var(--default-border-radius);
+            -ms-border-radius: var(--default-border-radius);
+            -o-border-radius: var(--default-border-radius);
+            background-color: var(--color-background);
+            color: var(--color-secundario);
+        }
+            footer div{/*contenedor del copyrigth*/
+                padding: 1rem;
+            }
+
+
+/* RESPONSIVE */
+/*Aquí se definen los efectos de como interactuan los grances bloques unos con otros*/
+
+/*Ancho pantalla menor a 1049 px*/
+@media only screen and (max-width: 1316px) {
+    /*Efecto de esconder el aside cuando la pantalla es demasiado chica para ver todo el contenido*/
+    .aside{display: none;}
+    section{width: 98%;}
+}

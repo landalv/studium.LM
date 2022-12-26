@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--Especificamos juego de caracteres-->
+    <title>Carlos Landa Vázquez</title><!--Titulo-->
+    <link rel="icon" type="image/png" href="./imagenes/logos/landacarlos-logo.png"><!--Favicon-->
+    <!--ESTILOS GENERALES-->
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <!--ESTILOS LOGOS-->
+    <style>
+        nav ul li a{
+            color:white;
+        }
+        nav ul li a:hover{
+            color: #dcc032;
+        }
+        .redes{
+            margin: 10px;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 0px 0px;
+            display: flex;
+            width: 95px;
+            align-items: center;
+        }
+        .redes-icon{
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .redes-icon img:last-child{
+            display: none;
+        }
+        .redes-icon:hover img:first-child{
+            margin: 0px;
+            padding: 0%;
+            width: 0%;
+            display: none;
+        }
+        .redes-icon:hover img:last-child{
+            display: block;
+        }
+    </style>
+    <!--ESTILO BOTON CV y PROYECTOS-->
+    <style>
+        #sobremi article:last-child a{
+            text-decoration: none;
+            background-color: wheat;
+            display: inline-block;
+            margin: 25px;
+            padding: 20px 25px;
+            border: 2px solid #404040;
+            border-radius: 50px;
+            color: #404040;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+        #sobremi article:last-child a:hover{
+            background-color: #dcc032;
+            color: black;
+        }
+        #proyectos .button a{
+            text-decoration: none;
+            background-color: wheat;
+            display: inline-block;
+            margin: 25px;
+            padding: 20px 25px;
+            border: 2px solid #404040;
+            border-radius: 50px;
+            color: #404040;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+        #proyectos .button a:hover{
+            background-color: #dcc032;
+            color: black;
+        }
+    </style>
+</head>
+<body style="background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(./imagenes/programar.jpg);background-size: cover;background-position: center up;/*POSICIONAMOS EL PIE SIEMPRE ABAJO*/position: relative;padding-bottom: 5em;min-height: 100vh;">
+    <header id="inicio" style="display:flex;align-items: center;justify-content: space-between;padding: 10px;background-color: black;">
+        <!--Cabecera-->
+        <img src="./imagenes/logos/landacarlos.png" alt="landacarlos.com" title="landacarlos.com" style="">
+        <h1 style="color: rgb(220, 192, 50);">Carlos Landa Vázquez</h1>
+    </header>
+    <nav style="background-color:rgba(0,0,0,.4);display: flex;justify-content: space-between;">
+        <!--menu de navegación--><!--a traves del uso de listas-->
+        <ul class="menu" type="none" style="text-decoration: none; display:flex;text-transform: uppercase;">
+            <li style="margin: 10px;"><a style="text-decoration:none;" href="./index.html" >Inicio</a></li>
+            <li style="margin: 10px;"><a style="text-decoration:none;" href="https://drive.google.com/file/d/14xD5AosQMy_A4FpEtl3JZjJr6Je3xsk-/view?usp=sharing" target="_blank">Curriculum</a></li>
+            <li style="margin: 10px;"><a style="text-decoration:none;" href="#proyectos">Proyectos</a></li>
+            <li style="margin: 10px;"><a style="text-decoration:none;" href="mailto:carlos@landacarlos.com?Subject=Estoy%20interesado%20en%20tu%20perfil">Contacto</a></li>
+        </ul>
+        <!-- ICONO REDES SOCIALES -->
+        <div class="redes">
+            <a href="https://github.com/landalv" target="_blank" class="redes-icon">
+                <img src="./imagenes/logos/github-white.png" alt="github-logo" title="Enlace a Github" style="width: 100%;">
+                <img src="./imagenes/logos/github-yellow.png" alt="github-logo" title="Enlace a Github" style="width: 100%;">
+            </a>
+            <a href="https://www.linkedin.com/in/carlos-landa-vazquez" target="_blank" class="redes-icon">
+                <img id="github-logo" src="./imagenes/logos/linkedin-white.png" alt="linkedin-logo" title="Enlace a LinkedIn"style="width: 100%";>
+                <img id="github-logo" src="./imagenes/logos/linkedin-yellow.png" alt="linkedin-logo" title="Enlace a LinkedIn"style="width: 100%;">
+            </a>
+        </div>
+    </nav>
+    <section id="proyectos" style="padding-top: 20px;padding-left: 20px;padding-right: 20px;">
+        <!--Cuerpo Central-->
+        <article style="background-color:rgba(0,0,0,.4);display: block;width: 100%;">
+            <!--Articulo dentro de la sección principal-->
+            <h2 style="color: white;padding: 1em;text-align: center;text-transform: uppercase;">Hobbies</h2>
+            <hr>
+            <table border="1" style="color:white;margin: 10px;background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));">
+                <thead>
+                    <tr style="justify-content: space-between;width: 100%;margin: 10px;">
+                        <th><h3>Nombre</h3></th>
+                        <th><h3>Descripción</h3></th>
+                        <th><h3>Un vistazo</h3></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="width: 33%;">
+                        <td>
+                            <h4 style="margin: 10px;text-align:center">
+                                Impresión 3D
+                            </h4>
+                        </td>
+                        <td>
+                            <p style="color: white;">Diseño mediante el software Fusión 360 e imprimo gracias a que poseo una impresora "Ender3" con octoprint integrado. </p>
+                        </td>
+                        <td>
+                            <picture style="width: 33%;text-align: center;">
+                                <img src="./imagenes/hobbies/impresion3d.png" alt="Autofill-restalia" title="Autofill Restalia" style="width:100%;"/>
+                            </picture>
+                        </td>
+                    </tr>
+                    <tr style="width: 33%;">
+                        <td>
+                            <h4 style="margin: 10px;text-align:center">
+                                Electronica
+                            </h4>
+                        </td>
+                        <td>
+                            <p style="color: white;">Desarrollo de forma personal soluciones IoT con electronica que yo mismo diseño, normalmente desarrollado en soluciones con microprocesadores ESP32 y PICs</p>
+                        </td>
+                        <td>
+                            <picture style="width: 33%;text-align: center;">
+                                <img src="./imagenes/hobbies/esp32.jpg" alt="Autofill-restalia" title="Autofill Restalia" style="width:100%;"/>
+                            </picture>
+                        </td>
+                    </tr>
+                    <tr style="width: 33%;">
+                        <td>
+                            <h4 style="margin: 10px;text-align:center">
+                                Domotica
+                            </h4>
+                        </td>
+                        <td>
+                            <p style="margin: 10px;text-align:center">Tengo un sistema domotico basado en un servidor homeassistant que tengo en casa y el cual mantengo personalmente, ademas de desarrollar sistemas propios.</p>
+                        </td>
+                        <td>
+                            <picture style="width: 33%;text-align: center;">
+                                <img src="./imagenes/hobbies/homeassistant.png" alt="Autofill-restalia" title="Autofill Restalia" style="width:100%;"/>
+                            </picture>
+                        </td>
+                    </tr>
+                <tfoot></tfoot>
+            </table>
+            <div style="display: flex;padding: 10px; text-align:center;">
+                <div style="width: 33%;display: block;padding: 10px;">
+                    
+                    
+                </div>
+                <div style="display: block;text-align: center;width: 33%;padding: 10px;">
+                    
+                    
+                </div>
+                <div style="display: block;text-align: center;width: 33%;padding: 10px;align-items: center;">
+                    
+                    
+                </div>
+            </div>
+            <div class="button" style="align-items: center;width: 100%;text-align: center;">
+                <a href="./index.html">volver al inicio</a>
+            </div>
+        </article>
+    </section>
+    <footer style="padding: 1em 0;text-align: center; background-color: black; color:#dcc032;/*POSICIONAMOS EL PIE SIEMPRE ABAJO*/position: absolute;bottom: 0;width: 100%;">
+        <!--Pie de pagina web-->
+        &copy; Carlos Landa Vazquez 2022
+    </footer>
+</body>
+</html>

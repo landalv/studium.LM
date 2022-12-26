@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Referencias de Etiquetas</title>
+        <meta charset="utf-8"><!--utf-8 para interpretar caracteres español, con tildes y todo-->
+        <link rel="icon" type="image/png" href="./img/studium.png"> <!--normalmente se usa .png .ico .gif-->
+    </head>
+    <body style="background-color:rgb(150,150,150);"><!-- style="background-color:#999999" -->
+        <!--ETIQUETAS DE BLOQUE-->
+            <!--Encabezado-->
+                <h1 style="background-color: #00ff00;">Encabezado h1</h1>
+                <h2 style="background-color: #00ff00;">Encabezado h2</h2>
+                <h3 style="background-color: #00ff00;">Encabezado h3</h3>
+                <h4 style="background-color: #00ff00;">Encabezado h4</h4>
+                <h5 style="background-color: #00ff00;">Encabezado h5</h5>
+                <h6 style="background-color: #00ff00;">Encabezado h6</h6>
+            <!--parrafo-->
+                <p style="background-color: #ffffff;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laboriosam odio et iusto consectetur laudantium, animi fugiat excepturi quis eaque alias dolore impedit commodi dolor sunt soluta dignissimos molestias dolorum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi nam ducimus dolore enim repudiandae sed accusamus exercitationem natus. At placeat ullam expedita doloremque quis temporibus, quod enim! Maiores, quidem inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt ex beatae dicta ducimus eum vero delectus possimus, sit aperiam velit, assumenda illum enim sunt dolorum officiis repellendus numquam accusantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium sunt harum, eius ducimus commodi nulla ipsum aut illum voluptatem autem maxime vero soluta asperiores, iste possimus quae mollitia distinctio!</p><!--Alt+Z para poner en varias lineas con vscode-->
+            <!--separadores-->
+                <!--salto de linea-->
+                    <br> linea1 <br/> linea2 <br> linea 3 <br/> <!--se puede escribir <br> o <br/> -->
+                <!--separador horizontal-->
+                    <hr/> Linea separadora (a partir de ahora la usaremos para separar la etiquetas en linea).
+        <!--ETIQUETAS EN LINEA--><hr/>
+        ETIQUETAS EN LINEA
+            <!--Enlaces--><hr/>
+                <a href="#" target="_blank">esto es un enlace</a>
+                <!--atributo target sirve para abrir en una nueva pestaña.-->
+                <!--si href empieza por # se refiere al id de una de las etiquetas del mismo .html (se llaman anclas)-->
+            <!--Imagenes--><hr/>
+                Imagen: <img src="./img/studium.png" alt="Logotivo del grupo Studium" title="logo_studium"/><!--insertado en tamaño original de la imagen-->
+                <!--atributo 
+                    width forzamos ancho
+                    heigth formamos alto
+                    *si solo usamos uno se nos autoajusta el otro.
+                -->
+                <!--atributo alt es texto alternativo por si no se muestra la imagen-->
+                <!--atributo title es el texto que se muestra cuando dejamos el cursor encima de la imagen-->
+        <!--ETIQUETAS DE FORMATEO DE TEXTO--><hr/>
+        ETIQUETAS DE FORMATEO DE TEXTO
+            <!--negrita--><hr/>
+                <b style="background-color: #ffffff;">negrita</b><!--simplemente cambia el formato del texto-->
+                <strong style="background-color: #ff0000;">importante y negrita</strong><!--lo marca como importante para el buscador-->
+            <!--cursiva--><hr/>
+                <i style="background-color: #ffffff;">cursiva</i>
+            <!--subrayado--><hr/>
+                <u style="background-color: #ff0000;">subrayado</u>
+            <hr/>podemos escribir,
+            <!--superindices-->
+                <sup>--superindices--</sup>
+            y
+            <!--subindices-->
+                <sub>--subindices--</sub>
+            <!--insertar espacios-->
+                o podemos instestar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;varios espacios con & nbsp;
+            <!--listas--><hr/>
+            LISTAS:<br/><br/>
+                <!--ordenada-->
+                ol>li*4
+                <ol>
+                    <!--atributo type=
+                        "a"-letraMinus
+                        "A"-letraMayus
+                    -->
+                    <!--atributo start=
+                        "7"-empieza a contar por 7
+                    -->
+                    <li>Azucar</li>
+                    <li>Huevos</li>
+                    <li>Pan</li>
+                    <li>Leche</li>
+                </ol>
+                <!--desordenada--><hr/>
+                ul>li*4
+                <ul>
+                    <!--atributo type=
+                        "disc"-circuloRelleno;
+                        "square"-cuadrado;
+                        "circle"-circuloVacio;
+                        "none"-sinNada
+                    -->
+                    <li>Azucar</li>
+                    <li>Huevos</li>
+                    <li>Pan</li>
+                    <li>Leche</li>
+                </ul>
+                <!--definición--><hr/>
+                <dl>
+                    <dt>Nombre a definir</dt>
+                    <dd>Definición de "Nombre a definir".</dd>
+                    <dt>Nombre a definir</dt>
+                    <dd>Definición de "Nombre a definir".</dd>
+                    <dt>Nombre a definir</dt>
+                    <dd>Definición de "Nombre a definir".</dd>
+                    <dt>Nombre a definir</dt>
+                    <dd>Definición de "Nombre a definir".</dd>
+                </dl><br>
+                <!--listas anidadas--><hr/>
+                <ol>
+                    <li>Elemento
+                        <ul>
+                            <li>SubElemento1</li>
+                            <li>SubElemento2</li>
+                            <li>SubElemento3</li>
+                        </ul>
+                    </li>
+                    <li>Elemento
+                        <ol>
+                            <li>SubElemento1</li>
+                            <li>SubElemento2</li>
+                            <li>SubElemento3</li>
+                        </ol>
+                    </li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                </ol>
+            <hr>
+            <!--Tablas-->
+            TABLAS:<br/><br/>
+                <table border="1"> <!--Tabla-->
+                    <!--atributo border="1" establece el borde
+                    -->
+                    <!--atributo aling="center" alinea al centro del contenedor la tabla-->
+                    <!--atributo style="text-aling:center"; alinea al centro el testo de dentror de la tabla.-->
+                    <!--atributo celpadding espacio entre texto y celda-->
+                    <!--atributo cellspacing espacio entre celdas-->
+                    <!-- width = 
+                        "X" ocupara Xpx
+                        "X%" ocupara anchura del contenedor.
+                    -->
+                    <!--atributo bordercolor cambia el color del borde-->
+                    <!--atributo bgcolor cambia color de fondo de celda-->
+                    <!--atributo background ponemos imagen de fondo con una ruta-->
+                    <!--atributo colspan combina celdas de una misma fila-->
+                    <!--atrubito rowspan combina celdas de una misma columna-->
+                    <caption>Titulo de la tabla</caption>
+                    <thead> <!--Cabecera Table-->
+                        <tr> <!--Fila Cabecera-->
+                            <th>Cabecera1</th> <!--Columnas cabecera-->
+                            <th>Cabecera2</th>
+                            <th>Cabecera3</th>
+                            <th>Cabecera4</th>
+                            <th>Cabecera5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> <!--Fila Cuerpo-->
+                            <td>Cuerpo1</td> <!--Columnas cuerpo-->
+                            <td>Cuerpo1</td>
+                            <td>Cuerpo1</td>
+                            <td>Cuerpo1</td>
+                            <td>Cuerpo1</td>
+                        </tr>
+                        <tr> <!--Fila Cuerpo-->
+                            <td>Cuerpo2</td> <!--Columnas cuerpo-->
+                            <td>Cuerpo2</td>
+                            <td>Cuerpo2</td>
+                            <td>Cuerpo2</td>
+                            <td>Cuerpo2</td>
+                        </tr>
+                        <tr> <!--Fila Cuerpo-->
+                            <td>Cuerpo3</td> <!--Columnas cuerpo-->
+                            <td>Cuerpo3</td>
+                            <td>Cuerpo3</td>
+                            <td>Cuerpo3</td>
+                            <td>Cuerpo3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr> <!--Fila pie-->
+                            <td colspan="3" align="rigth">Pie1</td> <!--Columnas pie-->
+                            <!--atributo aling="center" alinea al centro-->
+                            <!-- width = 
+                                "X" ocupara Xpx
+                                "X%" ocupara anchura del contenedor.
+                            -->
+                        </tr>
+                    </tfoot>
+                </table>
+            <hr>
+            
+    </body>
+</html>

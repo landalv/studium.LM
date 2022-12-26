@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Añadimos los estilos css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Carlos Landa Vázquez</title>
+    <link rel="icon" type="image/png" href="./logos/landacarlos-logo.png">
+    <!--ESTILOS GENERALES-->
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            padding: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <!--ESTILOS INICIO-->
+    <style>
+        #inicio{
+            background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.7)),url(./img/programar.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+        .contenido-menu {
+            display: flex;
+            background-color:black;
+            align-items: center;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 10px;
+        }
+        nav{
+            display: flex;
+            height: 100%;
+            width: auto;
+        }
+        /* MENU */
+        .menu{
+            width: 100%;
+            justify-content: space-between;
+        }
+        .topnav {
+            overflow: hidden;
+            height: 100%;
+        }
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            color: #dcc032;
+        }
+        .icono-menu{
+            display: none;
+        }
+        .redes{
+            margin: 10px;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 0px 0px;
+            display: flex;
+            width: 95px;
+            align-items: center;
+        }
+        .redes-icon{
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .redes-icon img:last-child{
+            display: none;
+        }
+        .redes-icon:hover img:first-child{
+            margin: 0px;
+            padding: 0%;
+            width: 0%;
+            display: none;
+        }
+        .redes-icon:hover img:last-child{
+            display: block;
+        }
+        @media (max-width: 646px) {
+            .menu{
+                display: none;
+            }
+            .header{
+                width: 100%;
+                justify-content: space-between;
+            }
+            .logo{
+                display: block;
+                width: 100%;
+                align-items: center;
+                float: right;
+                justify-content: space-between;
+                padding-right: 10px;
+            }
+            .logo picture {
+                width: 100%;
+            }
+            .logo picture img{
+                float: right;
+            }
+            /* MENU RESPONSIVE */
+            .icono-menu {
+                display: block;
+                overflow: hidden;
+                height: 100%;
+                width: 448px;
+                margin-left: 10px;
+                margin-left: 10px;
+            }
+            .icono-menu a{
+                float: right;
+                text-decoration: none;
+                color: white;
+            }
+            .icono-menu img{
+                color: white;
+                margin: 0%;
+                padding-right: 10px;
+                max-width: 20px;
+                align-self: center;
+                width: 448px;
+            }
+        }
+        @media (max-width: 240px) {
+            .logo{
+                display: none;
+            }
+            .icono-menu {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        #inicio .contenido .presentacion{
+            color: white;
+            max-width: 1100px;
+            height: 100vh;
+            margin: auto;
+            columns: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #inicio .contenido .presentacion .bienvenida{
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        #inicio .contenido .presentacion h2{
+            font-size: 55px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        #inicio .contenido .presentacion h2 span{
+            font-size: 40px;
+            color: #dcc032;
+        }
+        #inicio .contenido .presentacion .descripcion{
+            max-width: 700px;
+            margin: 25 px auto;
+            font-size: 18px;
+            text-align: center;
+        }
+        #inicio .contenido .presentacion a{
+            text-decoration: none;
+            display: inline-block;
+            margin: 25px;
+            padding: 20px 25px;
+            border: 2px solid white;
+            border-radius: 50px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+        #inicio .contenido .presentacion a:hover{
+            background-color: #dcc032;
+            color: black;
+        }
+    </style>
+    <!--ESTILOS SOBRE MI-->
+    <style>
+        section{
+            background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+            background-size: cover;
+            background-position: center center;
+        }
+        #sobremi {
+            max-width: 1100px;
+            margin:auto;
+            padding: 100px 15px;
+            color: black;
+            display: flex;
+        }
+        #sobremi .contenedor-foto{
+            max-width: 400px;
+            margin-right: 80px;
+        }
+        #sobremi .contenedor-foto img{
+            padding: 20px;
+            width: 100%;
+            border-radius: 20px;
+            background-color: grey;
+        }
+        #sobremi .sobremi .titulo-seccion{
+            font-size: 22px;
+            text-transform: uppercase;
+            color: #404040;
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-thickness: 5px;
+        }
+        #sobremi .sobremi h2{
+            font-size: 34px;
+            font-weight: bold;
+            margin: 20px 0;
+            letter-spacing: 2px;
+        }
+        #sobremi .sobremi h2 span{
+            color: #404040;
+        }
+        #sobremi .sobremi h3{
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        #sobremi .sobremi p{
+            font-size: 14px;
+            line-height: 25px;
+            color: #404040;
+            margin-bottom: 12px;
+        }
+        #sobremi .sobremi a{
+            text-decoration: none;
+            display: inline-block;
+            margin: 25px;
+            padding: 20px 25px;
+            border: 2px solid #404040;
+            border-radius: 50px;
+            color: #404040;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+        #sobremi .sobremi a:hover{
+            background-color: #dcc032;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header id="inicio">
+        <div class="contenido">
+            <!-- MENU INICIAL -->
+            <div class="contenido-menu">
+                <!-- ICONO MENÚ RESPOSIVE -->
+                <div class="icono-menu">
+                    <img src="./logos/bars-solid-white.png" alt="MENU" title="MENU">
+                </div>
+                <div class="logo">
+                    <picture>
+                        <source media="(max-width: 430px)" srcset="./logos/landacarlos.png""/>
+                        <img src="./logos/landacarlos.png" alt="Logotipo_CLV" title="CLV"/>
+                    </picture>
+                    <!--<h1 style="background-color: red;">
+                        /CLV/
+                    </h1>-->
+                </div>
+                <nav class="menu">
+                    <div class="topnav">
+                        <a href="#inicio">Inicio</a>
+                        <a href="#sobre-mi">Sobre mi</a>
+                        <a href="#contact">Contacto</a>
+                        <a href="#poyectos">Proyectos</a>
+                    </div>
+                    <!-- ICONO REDES SOCIALES -->
+                    <div class="redes">
+                        <a href="https://github.com/landalv" target="_blank" class="redes-icon">
+                            <img src="./logos/github-white.png" alt="github-logo" title="Enlace a Github" style="width: 100%;">
+                            <img src="./logos/github-yellow.png" alt="github-logo" title="Enlace a Github" style="width: 100%;">
+                        </a>
+                        <a href="https://www.linkedin.com/in/carlos-landa-vazquez" target="_blank" class="redes-icon">
+                            <img id="github-logo" src="./logos/linkedin-white.png" alt="linkedin-logo" title="Enlace a LinkedIn"style="width: 100%";>
+                            <img id="github-logo" src="./logos/linkedin-yellow.png" alt="linkedin-logo" title="Enlace a LinkedIn"style="width: 100%;">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <!-- Presentación -->
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>    
+                <h2>Soy <span>Carlos Landa Vázquez</span>, desarollador IoT.</h2>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem aut assumenda obcaecati impedit maiores sunt, ut aperiam perspiciatis alias rem reiciendis blanditiis quam quod officia vitae explicabo quisquam adipisci?</p>
+                <a href="#portfolio">Ir al Portfolio</a>
+            </div>
+        </div>
+    </header>
+    <!--SECCION SOBRE MI-->
+    <section>
+        <article id="sobremi">
+            <div class="contenedor-foto">
+                <img src="./img/carlos_2.jpg" alt="foto-carlos" title="Carlos Landa Vázquez">
+            </div>    
+            <div class="sobremi">
+                <p class="titulo-seccion">Sobre Mi</p>
+                <h2>Hola,soy <span>Carlos Landa Vázquez</span></h2><h3>Desarollador IoT.</h3>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem aut assumenda obcaecati impedit maiores sunt, ut aperiam perspiciatis alias rem reiciendis blanditiis quam quod officia vitae explicabo quisquam adipisci?</p>
+                <a href="./files/CV_Carlos_Landa_25_10_2022.pdf" target="_blank">Descargar CV</a>
+            </div>
+        </article>
+    </section>
+    <!--SECCION SERVICIOS-->
+
+    <!--PIE-->
+    <footer></footer>
+</body>
+</html>

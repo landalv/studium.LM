@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"><!--Especificamos juego de caracteres-->
+            <!--Titulo-->
+            <title>Carlos Landa Vázquez</title>
+            <!--Favicon-->
+            <link rel="icon" type="image/png" href="./media/img/logos/landacarlos-logo.png">
+            <!--Estilos CSS-->
+            <link rel="stylesheet" type="text/css" href="./css/general.css"><!--estilos generales para estructura HTML5-->
+            <link rel="stylesheet" type="text/css" href="./css/menu.css"><!--estilos para menu superior (header+nav) -->
+            <link rel="stylesheet" type="text/css" href="./css/cuerpo.css"><!--estilos para el cuerpo de la web-->
+    </head>
+    <body>
+        <header class="menu" id="inicio">
+            <!--CABECERA A LA IZQUIERDA DEL MENU-->
+            <div class="logo-container">
+                <a href="./#menu">
+                    <img src="./media/img/logos/landacarlos.png" alt="logo-landacarlos.com" title="landacarlos.com">
+                </a>
+            </div>
+            <div>
+                <a href="./#menu">
+                    <h1>Carlos Landa Vázquez</h1>
+                </a>
+            </div>
+        </header>
+        <hr class="menu-bar">
+        <nav class="menu">
+            <!-- ENLACES DE NAVEGACIÓN -->
+            <div>
+                <ul class="menu" type="none" >
+                    <li><a href="#inicio" >Inicio</a></li>
+                    <li><a href="#sobremi">Sobre mi</a></li>
+                    <li><a href="https://drive.google.com/file/d/14xD5AosQMy_A4FpEtl3JZjJr6Je3xsk-/view?usp=sharing" target="_blank">Curriculum</a></li>
+                    <li><a href="./proyectos.html">Proyectos</a></li>
+                    <li><a href="./hobbies.html">Hobbies</a></li>
+                    <li><a href="mailto:carlos@landacarlos.com?Subject=Estoy%20interesado%20en%20tu%20perfil">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- ICONO REDES SOCIALES -->
+            <div>
+                <div class="redes-container">
+                    <a href="https://github.com/landalv" target="_blank" class="redes-icon">
+                        <img src="./media/img/logos/github-white.png" alt="github-logo" title="Enlace a Github">
+                        <img src="./media/img/logos/github-green.png" alt="github-logo" title="Enlace a Github">
+                    </a>
+                </div>
+                <div class="redes-container">
+                    <a href="https://www.linkedin.com/in/carlos-landa-vazquez" target="_blank" class="redes-icon">
+                        <img id="github-logo" src="./media/img/logos/linkedin-white.png" alt="linkedin-logo" title="Enlace a LinkedIn">
+                        <img id="github-logo" src="./media/img/logos/linkedin-green.png" alt="linkedin-logo" title="Enlace a LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <section style="width: 98%;">
+            <!--Cuerpo Central-->
+            <article class="proyectos" id="proyectos" style="display: block;">
+                <!--Articulo dentro de la sección principal-->
+                <table  align="center">
+                    <thead align="center">
+                        <tr><th colspan="3"><h2>Proyectos</h2></th></tr>
+                        <tr>
+                            <th><h3>Nombre</h3></th>
+                            <th><h3>Descripción</h3></th>
+                            <th><h3>Un vistazo</h3></th>
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        <tr>
+                            <td>
+                                <h4>
+                                    Estación de recarga y custodia de patinetes electricos
+                                </h4>
+                            </td>
+                            <td>
+                                <p>Proyecto que lleve a cabo durante mi estancia en la empresa <a href="https://www.solumpv.com/">Solum Photovoltaic Innovation</a>, para recarga y custodia de patinetes electricos a traves de app movil propia.</p>
+                            </td>
+                            <td>
+
+                                <div class="img-container">
+                                    <a href="https://www.solumpv.com/helios/">
+                                        <img src="./media/img/proyectos/helios.png" alt="Estación de recarga helios-solum" title="Helios Solum">
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>
+                                    Tirador de Cerveza Automatico
+                                </h4>
+                            </td>
+                            <td>
+                                <p>Uno de los principales proyecto que lleve a cabo durante mi estancia en la empresa <a href="https://www.gmingenieria.com/">GM Ingenieria</a>, el cual consistio en un tirador de cerveza automatico para los establecimientos "100 montaditos" del grupo restalia.</p>
+                            </td>
+                            <td>
+                                <div class="img-container">
+                                    <a href="https://www.gruporestalia.com/100-montaditos-revoluciona-la-forma-de-consumir-cerveza-con-autofill">
+                                        <img src="./media/img/proyectos/100_montaditos_revoluciona.png" alt="tirador de cerveza Autofill-restalia" title="Autofill-restalia">
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>
+                                    Sensor Aparcamiento
+                                </h4>
+                            </td>
+                            <td>
+                                <p>Este fué uno de los primeros proyectos que lleve a cabo durante mi formación y consiste en un medido de aparcamiento, que detecta distancia a traves de ultrasonido y todo el circuitaje del sistema lo diseñe y lleve a cabo a traves del software proteus, mientras que la programación la lleve a cabo a traves del software de arduino.
+                                </p>
+                            </td>
+                            <td>
+                                <!--
+                                <video style="width: 100%;" controls muted>
+                                    <source src="./imagenes/proyectos/proyecto1.mp4"/>
+                                    tu navegador no acepta videos .mp4
+                                </video>
+                                -->
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/emZYxvdvX8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </td>
+                        </tr>
+                        <tfoot align="center">
+                            <tr>
+                                <td colspan="3">
+                                    <div class="button">
+                                        <a href="./index.html#inicio">
+                                            <h3>Volver a Inicio</h3>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                </table>
+            </article>
+        </section>
+        <footer>
+            <!--Pie de pagina web-->
+            <div><h2>&copy; Carlos Landa Vazquez 2022</h2></div>
+        </footer>
+    </body>
+</html>

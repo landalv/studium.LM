@@ -1,0 +1,35 @@
+Evaluación
+Este módulo será evaluado de la siguiente forma:
+En cada Tema se ha de aprobar un examen teórico tipo Test y alguna que otra Práctica.
+
+Para aprobar el Trimestre o el Curso completo, hay que aprobar TODOS y cada uno de los elementos de evaluación, a saber, Tests y Prácticas.
+
+Las prácticas se pueden entregar dos veces como máximo, dentro del plazo establecido. La primera entrega se considera una semana antes de la fecha de entrega.
+
+Las recuperaciones (Entregas FUERA de plazo o suspendidas) se evalúan con un 5 como nota MÁXIMA para evitar desagravios comparativos con compañeros o compañeras que han entregado en tiempo sus trabajos o han aprobado sus prácticas.
+
+El peso de la nota se repartirá entre un 30% para los Tests y un 70% las Prácticas.
+
+Primer Trimestre:
+
+Tema 1: Test
+
+Tema 2: Test y Práctica
+
+Tema 3: Test y Práctica
+
+Segundo Trimestre:
+
+Tema 4: Test y Práctica
+
+Tema 5: Test y Práctica
+
+Tema 6: Test y Práctica
+
+Tema 7: Test y Práctica
+
+Tercer Trimestre:
+
+Temas 8: Test y Práctica
+
+Última modificación: lunes, 9 de agosto de 2021, 10:16

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--Especificamos juego de caracteres-->
+    <title>Carlos Landa Vázquez</title><!--Titulo-->
+    <link rel="icon" type="image/png" href="./imagenes/logos/landacarlos-logo.png"><!--Favicon-->
+    <!--ESTILOS GENERALES-->
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <!--ESTILOS LOGOS-->
+    <style>
+        nav ul li a{
+            color:white;
+        }
+        nav ul li a:hover{
+            color: #dcc032;
+        }
+        .redes{
+            margin: 10px;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 0px 0px;
+            display: flex;
+            width: 95px;
+            align-items: center;
+        }
+        .redes-icon{
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .redes-icon img:last-child{
+            display: none;
+        }
+        .redes-icon:hover img:first-child{
+            margin: 0px;
+            padding: 0%;
+            width: 0%;
+            display: none;
+        }
+        .redes-icon:hover img:last-child{
+            display: block;
+        }
+    </style>
+    <!--ESTILO BOTON CV y PROYECTOS-->
+    <style>
+        #sobremi article:last-child a{
+            text-decoration: none;
+            background-color: wheat;
+            display: inline-block;
+            margin: 25px;
+            padding: 20px 25px;
+            border: 2px solid #404040;
+            border-radius: 50px;
+            color: #404040;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+        #sobremi article:last-child a:hover{
+            background-color: #dcc032;
+            color: black;
+        }
+        #proyectos .button a{
+            text-decoration: none;
+            background-color: wheat;
+            display: inline-block;
+            margin: 25px;
+            padding: 20px 25px;
+            border: 2px solid #404040;
+            border-radius: 50px;
+            color: #404040;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+        #proyectos .button a:hover{
+            background-color: #dcc032;
+            color: black;
+        }
+        #hobbies .button a{
+            text-decoration: none;
+            background-color: wheat;
+            display: inline-block;
+            margin: 25px;
+            padding: 20px 25px;
+            border: 2px solid #404040;
+            border-radius: 50px;
+            color: #404040;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+        #hobbies .button a:hover{
+            background-color: #dcc032;
+            color: black;
+        }
+    </style>
+</head>
+<body style="background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(./imagenes/programar.jpg);background-size: cover;background-position: center up;/*POSICIONAMOS EL PIE SIEMPRE ABAJO*/position: relative;padding-bottom: 5em;min-height: 100vh;">
+    <header id="inicio" style="display:flex;align-items: center;justify-content: space-between;padding: 10px;background-color: black;">
+        <!--Cabecera-->
+        <img src="./imagenes/logos/landacarlos.png" alt="landacarlos.com" title="landacarlos.com" style="">
+        <h1 style="color: rgb(220, 192, 50);">Carlos Landa Vázquez</h1>
+    </header>
+    <nav style="background-color:rgba(0,0,0,.4);display: flex;justify-content: space-between;">
+        <!--menu de navegación--><!--a traves del uso de listas-->
+        <ul class="menu" type="none" style="text-decoration: none; display:flex;text-transform: uppercase;">
+            <li style="margin: 10px;"><a style="text-decoration:none;" href="#inicio" >Inicio</a></li>
+            <li style="margin: 10px;"><a style="text-decoration:none;" href="#sobremi">Sobre mi</a></li>
+            <li style="margin: 10px;"><a style="text-decoration:none;" href="https://drive.google.com/file/d/14xD5AosQMy_A4FpEtl3JZjJr6Je3xsk-/view?usp=sharing" target="_blank">Curriculum</a></li>
+            <li style="margin: 10px;"><a style="text-decoration:none;" href="#proyectos">Proyectos</a></li>
+            <li style="margin: 10px;"><a style="text-decoration:none;" href="mailto:carlos@landacarlos.com?Subject=Estoy%20interesado%20en%20tu%20perfil">Contacto</a></li>
+        </ul>
+        <!-- ICONO REDES SOCIALES -->
+        <div class="redes">
+            <a href="https://github.com/landalv" target="_blank" class="redes-icon">
+                <img src="./imagenes/logos/github-white.png" alt="github-logo" title="Enlace a Github" style="width: 100%;">
+                <img src="./imagenes/logos/github-yellow.png" alt="github-logo" title="Enlace a Github" style="width: 100%;">
+            </a>
+            <a href="https://www.linkedin.com/in/carlos-landa-vazquez" target="_blank" class="redes-icon">
+                <img id="github-logo" src="./imagenes/logos/linkedin-white.png" alt="linkedin-logo" title="Enlace a LinkedIn"style="width: 100%";>
+                <img id="github-logo" src="./imagenes/logos/linkedin-yellow.png" alt="linkedin-logo" title="Enlace a LinkedIn"style="width: 100%;">
+            </a>
+        </div>
+    </nav>
+    <section id="sobremi" style="padding-top: 20px;">
+        <!--Cuerpo Central-->
+        <article style="background-color:rgba(0,0,0,.4);display: flex;align-items: center;">
+            <!--Articulo dentro de la sección principal-->
+            <div class="contenedor-imagen" style="max-width: 500px;margin: 80px;">
+                <img src="./imagenes/carlos.jpg" alt="foto-carlos" title="Carlos Landa Vázquez" style="padding: 20px;width: 100%;border-radius: 20px;background-color: grey;">
+            </div>
+            <div style="color: white;padding: 1em;">
+                <h2>Carlos Landa Vázquez</h2>
+                <br>
+                <h3>Proragamor, y desarollador IoT.</h3>
+                <p>
+                    <b style="background-color: #000000;">negrita</b><!--simplemente cambia el formato del texto-->
+                    <strong style="background-color: #ff0000;">importante y negrita</strong><!--lo marca como importante para el buscador-->
+                    <!--cursiva--><br/>
+                        <i style="background-color: #000000;">cursiva</i>
+                    <!--subrayado--><br/>
+                        <u style="background-color: #ff0000;">subrayado</u>
+                    <br/>podemos escribir,
+                    <!--superindices-->
+                        <sup>--superindices--</sup>
+                    y
+                    <!--subindices-->
+                        <sub>--subindices--</sub>
+                    <!--insertar espacios-->
+                        o podemos instestar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;varios espacios con & nbsp;
+                    <!--listas--><br/>
+                    <abbr title="abreviatura">por ultimo podriamos usar abreviatura</abbr>
+                </p>
+                <div style="display: flex;align-items: center;justify-content: space-between;">
+                    <a href="https://drive.google.com/file/d/14xD5AosQMy_A4FpEtl3JZjJr6Je3xsk-/view?usp=sharing" target="_blank" style="">Descargar CV</a>
+                    <audio autoplay controls muted>
+                        <source src="./audio/CLV_Presentación.mp3" type="audio/mp3"/>
+                        Tu navegador no acepta .mp3
+                    </audio>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="proyectos" style="padding-top: 20px;padding-left: 1%;width: 75%;float: left;">
+        <!--Cuerpo Central-->
+        <article style="background-color:rgba(0,0,0,.4);display: block;align-items: center;">
+            <!--Articulo dentro de la sección principal-->
+            <h2 style="color: white;padding: 1em;text-align: center;text-transform: uppercase;">Proyectos</h2>
+            <hr>
+            <div style="display: flex;padding: 10px; text-align:center;">
+                <div style="width: 33%;display: block;padding: 10px;">
+                    <p style="color: white;">Uno de los primeros proyecto que lleve a cabo en electronica, diseñando el circuito y programando el microcontrolador.</p>
+                    <br>
+                    <hr>
+                    <!--
+                    <video style="width: 100%;" controls muted>
+                        <source src="./imagenes/proyectos/proyecto1.mp4"/>
+                        tu navegador no acepta videos .mp4
+                    </video>
+                    -->
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/emZYxvdvX8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div style="display: block;text-align: center;width: 33%;padding: 10px;">
+                    <p style="color: white;">Uno de los principales proyecto que lleve a cabo durante mi estancia en la empresa <a href="https://www.gmingenieria.com/" style="text-decoration: none; color:#dcc032">GM Ingenieria</a>, el cual consistio en un tirador de cerveza automatico para los establecimientos "100 montaditos" del grupo restalia.</p>
+                    <hr>
+                    <a href="https://www.gruporestalia.com/100-montaditos-revoluciona-la-forma-de-consumir-cerveza-con-autofill" target="_blank">
+                        <picture style="width: 33%;text-align: center;">
+                            <img src="./imagenes/proyectos/100_montaditos_revoluciona.png" alt="Autofill-restalia" title="Autofill Restalia" style="width:100%;"/>
+                        </picture>
+                    </a>
+                </div>
+                <div style="display: block;text-align: center;width: 33%;padding: 10px;align-items: center;">
+                    <p style="color: white;">Proyecto que lleve a cabo durante mi estancia en la empresa <a href="https://www.solumpv.com/" style="text-decoration: none; color:#dcc032">Solum Photovoltaic Innovation</a>, para recarga y custodia de patinetes electricos a traves de app movil propia.</p>
+                    <hr>
+                    <a href="https://www.solumpv.com/helios/" target="_blank" style="align-items: center;">
+                        <picture style="width: 33%;align-items: center;">
+                            <img src="./imagenes/proyectos/helios.png" alt="helios-solum" title="Estación Helios Solum" style="width:100%;"/>
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="button" style="align-items: center;width: 100%;text-align: center;">
+                <a href="./proyectos.html">mas proyectos</a>
+            </div>
+        </article>
+    </section>
+    <aside id="proyectos" style="margin-top: 40px;margin-left: 1%;margin-right: 1%;width: 22%;float: left;background-color:rgba(0,0,0,.4);display: flex;align-items: center;color: white;text-align: center;align-items: center;">
+        <div style="display: block;width:100%;align-items:center">
+            <h3>Proyectos</h3>
+            <ul>
+                <li type="none" style="text-transform:uppercase;padding-bottom: 20px;">Sensor de Aparcamiento</li>
+                <li type="none" style="text-transform:uppercase;padding-bottom: 20px;">Tirador Automatico de Cerveza</li>
+                <li type="none" style="text-transform:uppercase;padding-bottom: 20px;">Estación de recarga y custodia de patinetes electricos</li>
+            </ul>
+        </div>
+    </aside>
+    <p style="background-color:rgba(0,0,0,0);padding-top: 37em;color: rgba(0, 0, 0, 0);">a</p>
+    <section id="hobbies" style="padding-top: 20px;">
+        <!--Cuerpo Central-->
+        <article style="background-color:rgba(0,0,0,.4);display: block;align-items: center;">
+            <!--Articulo dentro de la sección principal-->
+            <h2 style="color: white;padding: 1em;text-align: center;text-transform: uppercase;">Hobbies</h2>
+            <hr>
+            <div style="display: flex;padding: 10px; text-align:center;">
+                <div style="width: 33%;display: block;padding: 10px;">
+                    <h3 style="color: white;">Impresion 3d</h3>
+                    <img src="./imagenes/hobbies/impresion3d.png" alt="impresion3d" title="Impresión 3D">
+                </div>
+                <div style="display: block;text-align: center;width: 33%;padding: 10px;">
+                    <h3 style="color: white;">Electronica e IoT</h3>
+                    <img src="./imagenes/hobbies/esp32.jpg" alt="esp32" title="ESP32">
+                </div>
+                <div style="display: block;text-align: center;width: 33%;padding: 10px;align-items: center;">
+                    <h3 style="color: white;">Domotica</h3>
+                    <img src="./imagenes/hobbies/homeassistant.png" alt="homeassistant" title="homeassistant">
+                </div>
+            </div>
+            <div class="button" style="align-items: center;width: 100%;text-align: center;">
+                <a href="./hobbies.html">mas proyectos</a>
+            </div>
+        </article>
+    </section>
+    <footer style="padding: 1em 0;text-align: center; background-color: black; color:#dcc032;/*POSICIONAMOS EL PIE SIEMPRE ABAJO*/position: absolute;bottom: 0;width: 100%;">
+        <!--Pie de pagina web-->
+        &copy; Carlos Landa Vazquez 2022
+    </footer>
+</body>
+</html>

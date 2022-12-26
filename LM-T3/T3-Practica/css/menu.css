@@ -1,0 +1,104 @@
+@import url(variables.css);
+/****************MENU****************************/
+
+.menu{
+    background-color: var(--color-background);
+    margin: var(--default-big-margin);
+    padding: var(--default-big-padding);
+    height: var(--default-medium-height);
+    font-size: var(--default-font-size);
+    display: block;
+    border-radius: var(--default-border-radius);
+        -webkit-border-radius: var(--default-border-radius);
+        -moz-border-radius: var(--default-border-radius);
+        -ms-border-radius: var(--default-border-radius);
+        -o-border-radius: var(--default-border-radius);
+}
+hr.menu-bar{
+    margin: 0;
+    padding: 0;
+    margin-right: var(--default-big-margin);
+    margin-left: var(--default-big-margin);
+}
+/*efecto un solo menu*/
+header.menu{
+    margin-bottom:0 ;
+    border-radius: var(--default-border-radius);
+        -webkit-border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
+        -moz-border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
+        -ms-border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
+        -o-border-radius: var(--default-border-radius) var(--default-border-radius) 0 0;
+}
+nav.menu{
+    margin-top: 0;
+    border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
+    -webkit-border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
+    -moz-border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
+    -ms-border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
+    -o-border-radius: 0 0 var(--default-border-radius) var(--default-border-radius);
+}
+
+    /*definimos los hijos del header y nav*/
+    .menu div{
+        color: var(--color-primario);
+        margin: var(--default-medium-margin);
+        padding: var(--default-medium-padding);
+        width: auto;
+        align-items: center center;
+        margin: var(--default-medium-margin auto);
+    }
+    .menu div:first-child{
+        float: left;
+    }
+    .menu div:last-child{
+        float: right;
+    }
+    /*estilos imagenes*/
+    .menu .logo-container{
+        width: 3rem;
+    }
+    .menu .redes-container{
+        width: var(--default-small-width);
+        align-items: center center;
+        padding: var(--default-mid-padding);
+    }
+    .menu .redes-container img:last-child{
+        display: none;
+    }
+    .menu img{
+        width: 100%;
+    }
+    /*estilos lista*/
+    .menu ul{
+        background-color: rgba(0, 0, 0, 0);
+        text-decoration: none; 
+        display:flex;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        text-align: center center;
+    }
+        .menu ul li{
+            margin-right: .5rem;
+            margin-left: .5rem;
+            padding: 1rem 0px 1rem 0px;
+            /*min-width: 79px;*/
+            text-align: center center;
+        }
+    .menu .redes-container:hover img:first-child{
+        margin: 0px;
+        padding: 0%;
+        width:var(--imagen-width);
+        display: none;
+    }
+    /*efecto cambio de color de iconos github y LinkedIn*/
+    .menu .redes-container:hover img:last-child{
+        display: block;
+        width:var(--imagen-width);
+    }
+    /*estilos encabezado*/
+    .menu h1{
+        margin: .4rem;
+        text-align: center center;
+    }
